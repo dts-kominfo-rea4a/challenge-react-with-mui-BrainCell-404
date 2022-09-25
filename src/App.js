@@ -27,7 +27,7 @@ const App = () => {
       <Header />
       <Grid sx={{ mt: 5 }} container spacing={2} justifyContent="center">
         <Grid item xs={6} md={5}>
-          <ContactForm />
+          <ContactForm addContact={addNewContact} />
         </Grid>
         <Grid item xs={6} md={4}>
           {allContacts.map((contact) => {
